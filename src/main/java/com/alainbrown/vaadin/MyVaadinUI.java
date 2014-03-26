@@ -1,4 +1,4 @@
-package com.examplevaadin.dk;
+package com.alainbrown.vaadin;
 
 import javax.servlet.annotation.WebServlet;
 
@@ -23,7 +23,7 @@ public class MyVaadinUI extends UI {
 			asyncSupported = true)
 	@VaadinServletConfiguration(productionMode = false,
 			ui = MyVaadinUI.class,
-			widgetset = "com.examplevaadin.dk.AppWidgetSet")
+			widgetset = "com.alainbrown.vaadin.AppWidgetSet")
 	public static class Servlet extends VaadinServlet {}
 
 	@Override protected void init(VaadinRequest request) {
